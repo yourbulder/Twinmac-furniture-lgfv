@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twinmac Furniture - Quality Home Essentials</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; color: #333; }
+        header { background-color: #8B4513; color: white; padding: 20px; text-align: center; }
+        nav { background-color: #A0522D; padding: 10px; }
+        nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
+        .hero { background: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200') center/cover; height: 400px; display: flex; align-items: center; justify-content: center; color: white; text-align: center; }
+        .products { padding: 40px 20px; max-width: 1200px; margin: auto; }
+        .product-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        .product { background: white; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+        .product img { width: 100%; height: 250px; object-fit: cover; }
+        .product-info { padding: 20px; }
+        .price { font-size: 24px; color: #D2691E; font-weight: bold; }
+        .buy-btn { background: #8B4513; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; width: 100%; margin-top: 10px; }
+        footer { background: #333; color: white; text-align: center; padding: 20px; }
+        @media (max-width: 768px) { .product-grid { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Twinmac Furniture</h1>
+        <p>Premium Quality Furniture for Your Home in Delhi</p>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#products">Products</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <section id="home" class="hero">
+        <div>
+            <h2>Transform Your Space with Twinmac</h2>
+            <p>Discover timeless designs at unbeatable prices.</p>
+        </div>
+    </section>
+    <section id="products" class="products">
+        <h2>Featured Products</h2>
+        <div class="product-grid">
+            <div class="product">
+                <img src="https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=400" alt="Cozy Velvet Sofa">
+                <div class="product-info">
+                    <h3>Cozy Velvet Sofa</h3>
+                    <p>Luxurious 3-seater with soft velvet upholstery and wooden frame. Perfect for modern living rooms. Dimensions: 200x90x85 cm.</p>
+                    <div class="price">₹45,000</div>
+                    <button class="buy-btn">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product">
+                <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=400" alt="Rustic Dining Table">
+                <div class="product-info">
+                    <h3>Rustic Dining Table</h3>
+                    <p>Handcrafted oak wood table seats 6. Extendable design for family gatherings. Dimensions: 180x100x75 cm.</p>
+                    <div class="price">₹32,500</div>
+                    <button class="buy-btn">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product">
+                <img src="https://images.unsplash.com/photo-1600210492493-0946911123ea?w=400" alt="Elegant Queen Bed">
+                <div class="product-info">
+                    <h3>Elegant Queen Bed</h3>
+                    <p>Tufted headboard with storage drawers. Upholstered in premium fabric. Dimensions: 160x200x120 cm.</p>
+                    <div class="price">₹58,000</div>
+                    <button class="buy-btn">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product">
+                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=400" alt="Modern Armchair">
+                <div class="product-info">
+                    <h3>Modern Armchair</h3>
+                    <p>Ergonomic design with leather finish and swivel base. Ideal for reading nooks. Dimensions: 80x90x100 cm.</p>
+                    <div class="price">₹18,999</div>
+                    <button class="buy-btn">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="about" class="products">
+        <h2>About Twinmac</h2>
+        <p>Family-owned in Delhi since 2010, Twinmac crafts durable, stylish furniture blending traditional woodworking with modern aesthetics. We deliver across NCR within 7 days.</p>
+    </section>
+    <footer id="contact">
+        <p>Contact: +91-9876543210 | twinmac@email.com | Delhi, India</p>
+        <p>&copy; 2026 Twinmac Furniture. All rights reserved.</p>
+    </footer>
+    <script>
+        document.querySelectorAll('.buy-btn').forEach(btn => {
+            btn.addEventListener('click', () => alert('Added to cart! Visit our store for purchase.'));
+        });
+    </script>
+</body>
+</html>
