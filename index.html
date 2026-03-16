@@ -1,108 +1,708 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Nanak Dental Clinic – Healthy Smile Starts Here | Karol Bagh, Delhi</title>
-  <meta name="description" content="Nanak Dental Clinic in Karol Bagh, Delhi. Expert dental care by Dr. Bola (MBBS). Root canal, implants, whitening & more. Book appointment: +91 99996 08619"/>
-  <link rel="preconnect" href="https://fonts.googleapis.com"/>
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Khurana Dental Clinic</title>
+
 <style>
-:root {
-  --p:         #0B5EA8;
-  --p2:        #0D4F8C;
-  --p3:        #1876CC;
-  --teal:      #05B8B0;
-  --teal-soft: #E0F7F6;
-  --sky:       #EAF3FC;
-  --white:     #FFFFFF;
-  --offwhite:  #F5F9FE;
-  --dark:      #0A1628;
-  --mid:       #344563;
-  --light:     #6B7FA0;
-  --border:    #D3E5F5;
-  --gold:      #E8A020;
-  --ss:  0 2px 14px rgba(11,94,168,.07);
-  --sm:  0 8px 36px rgba(11,94,168,.12);
-  --sl:  0 20px 64px rgba(11,94,168,.17);
-  --rsm: 10px;
-  --rmd: 20px;
-  --rlg: 30px;
-  --fd:  'Cormorant Garamond', Georgia, serif;
-  --fb:  'Plus Jakarta Sans', sans-serif;
-  --tr:  .32s cubic-bezier(.4,0,.2,1);
+
+body{
+margin:0;
+font-family:Arial, sans-serif;
+background:#f5f7fa;
 }
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{font-family:var(--fb);color:var(--dark);background:var(--white);line-height:1.7;overflow-x:hidden}
-img{max-width:100%;display:block;object-fit:cover}
-a{text-decoration:none;color:inherit}
-ul{list-style:none}
 
-/* UTILITIES */
-.container{max-width:1200px;margin:0 auto;padding:0 24px}
-.sec-tag{display:inline-flex;align-items:center;gap:8px;background:var(--teal-soft);color:var(--teal);font-size:.73rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:6px 16px;border-radius:50px;margin-bottom:14px}
-.sec-tag i{font-size:.85em}
-.sec-head{font-family:var(--fd);font-size:clamp(2rem,3.8vw,3.1rem);font-weight:700;line-height:1.15;color:var(--dark);margin-bottom:14px}
-.sec-head span{color:var(--p)}
-.sec-sub{font-size:1rem;color:var(--mid);max-width:560px;line-height:1.85}
-.btn{display:inline-flex;align-items:center;gap:10px;padding:14px 32px;border-radius:50px;font-family:var(--fb);font-size:.93rem;font-weight:700;cursor:pointer;transition:var(--tr);border:none;text-decoration:none}
-.btn-blue{background:var(--p);color:#fff;box-shadow:0 6px 26px rgba(11,94,168,.36)}
-.btn-blue:hover{background:var(--p2);transform:translateY(-3px);box-shadow:0 12px 36px rgba(11,94,168,.46)}
-.btn-white{background:#fff;color:var(--p);box-shadow:var(--sm)}
-.btn-white:hover{background:var(--sky);transform:translateY(-3px)}
-.btn-ghost{background:transparent;color:#fff;border:2px solid rgba(255,255,255,.65)}
-.btn-ghost:hover{background:rgba(255,255,255,.12);border-color:#fff;transform:translateY(-3px)}
+/* NAVBAR */
 
-/* REVEAL */
-.rev{opacity:0;transform:translateY(38px);transition:opacity .75s ease,transform .75s ease}
-.rev.on{opacity:1;transform:translateY(0)}
-.rev-l{opacity:0;transform:translateX(-42px);transition:opacity .75s ease,transform .75s ease}
-.rev-l.on{opacity:1;transform:translateX(0)}
-.rev-r{opacity:0;transform:translateX(42px);transition:opacity .75s ease,transform .75s ease}
-.rev-r.on{opacity:1;transform:translateX(0)}
+nav{
+background:#0a7cff;
+color:white;
+padding:15px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
 
-/* ===== NAVBAR ===== */
-#nav{position:fixed;top:0;left:0;right:0;z-index:1000;padding:18px 0;transition:background var(--tr),box-shadow var(--tr),padding var(--tr)}
-#nav.scrolled{background:rgba(255,255,255,.97);backdrop-filter:blur(14px);box-shadow:0 2px 28px rgba(11,94,168,.1);padding:11px 0}
-.nav-in{display:flex;align-items:center;justify-content:space-between}
-.logo{display:flex;align-items:center;gap:12px}
-.logo-icon{width:44px;height:44px;border-radius:13px;background:linear-gradient(135deg,var(--p),var(--teal));display:flex;align-items:center;justify-content:center;color:#fff;font-size:1.25rem;box-shadow:0 4px 16px rgba(11,94,168,.32);flex-shrink:0}
-.logo-name{font-family:var(--fd);font-size:1.18rem;font-weight:700;color:#fff;line-height:1.1}
-#nav.scrolled .logo-name{color:var(--dark)}
-.logo-tag{font-size:.65rem;color:rgba(255,255,255,.65);letter-spacing:.05em;text-transform:uppercase}
-#nav.scrolled .logo-tag{color:var(--light)}
-.nav-links{display:flex;align-items:center;gap:4px}
-.nav-links a{font-size:.88rem;font-weight:500;color:rgba(255,255,255,.88);padding:8px 14px;border-radius:8px;transition:var(--tr)}
-#nav.scrolled .nav-links a{color:var(--mid)}
-.nav-links a:hover,.nav-links a.active{color:#fff;background:rgba(255,255,255,.15)}
-#nav.scrolled .nav-links a:hover,#nav.scrolled .nav-links a.active{color:var(--p);background:var(--sky)}
-.nav-cta{background:#fff;color:var(--p)!important;padding:10px 24px!important;border-radius:50px!important;font-weight:700!important;box-shadow:0 4px 18px rgba(255,255,255,.22)}
-#nav.scrolled .nav-cta{background:var(--p);color:#fff!important;box-shadow:0 4px 18px rgba(11,94,168,.3)}
-.nav-cta:hover{transform:translateY(-2px);background:var(--sky)!important}
-#nav.scrolled .nav-cta:hover{background:var(--p2)!important}
-.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:5px}
-.hamburger span{display:block;width:25px;height:2px;background:#fff;border-radius:2px;transition:var(--tr)}
-#nav.scrolled .hamburger span{background:var(--dark)}
-.hamburger.open span:nth-child(1){transform:rotate(45deg) translate(5px,5px)}
-.hamburger.open span:nth-child(2){opacity:0}
-.hamburger.open span:nth-child(3){transform:rotate(-45deg) translate(5px,-5px)}
-.mob-nav{display:none;position:fixed;inset:0;background:rgba(10,22,40,.97);z-index:999;flex-direction:column;align-items:center;justify-content:center;gap:6px}
-.mob-nav.open{display:flex}
-.mob-close{position:absolute;top:20px;right:24px;color:#fff;font-size:1.5rem;cursor:pointer}
-.mob-nav a{color:#fff;font-size:1.35rem;font-weight:500;padding:14px 36px;border-radius:12px;width:290px;text-align:center;transition:var(--tr)}
-.mob-nav a:hover{background:var(--p)}
+nav a{
+color:white;
+text-decoration:none;
+margin:0 10px;
+font-weight:bold;
+}
 
-/* ===== HERO ===== */
-#hero{
-  min-height:100vh;
-  background:
-    radial-gradient(ellipse at 72% 45%, rgba(5,184,176,.22) 0%, transparent 52%),
-    radial-gradient(ellipse at 18% 82%, rgba(24,118,204,.25) 0%, transparent 48%),
-    linear-gradient(140deg,#061628 0%,#0B3E72 40%,#0B5EA8 80%,#0D6BB8 100%);
-  display:flex;align-items:center;padding:140px 0 90px;position:relative;overflow:hidden
+/* HERO */
+
+.hero{
+position:relative;
+text-align:center;
+color:white;
+}
+
+.hero img{
+width:100%;
+height:400px;
+object-fit:cover;
+}
+
+.hero-text{
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+background:rgba(0,0,0,0.4);
+padding:20px;
+border-radius:10px;
+}
+
+/* ABOUT */
+
+.about{
+padding:40px;
+text-align:center;
+background:white;
+}
+
+.about img{
+width:300px;
+border-radius:10px;
+margin-top:15px;
+}
+
+/* SERVICES */
+
+.services{
+padding:40px;
+text-align:center;
+}
+
+.service-box{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+margin-top:20px;
+}
+
+.card{
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* GALLERY */
+
+.gallery{
+padding:40px;
+background:white;
+}
+
+.gallery-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:15px;
+}
+
+.gallery-grid img{
+width:100%;
+border-radius:10px;
+}
+
+/* CONTACT */
+
+.contact{
+padding:40px;
+text-align:center;
+}
+
+footer{
+background:#0a7cff;
+color:white;
+text-align:center;
+padding:15px;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav>
+<div><b>Khurana Dental</b></div>
+<div>
+<a href="#">Home</a>
+<a href="#about">About</a>
+<a href="#services">Services</a>
+<a href="#gallery">Gallery</a>
+<a href="#contact">Contact</a>
+</div>
+</nav>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<img src="https://i.ibb.co/8n86199z/photo-set1-01.jpg">
+
+<div class="hero-text">
+<h1>Khurana Dental Clinic</h1>
+<p>Healthy Smiles • Trusted Care</p>
+</div>
+
+</section>
+
+<!-- ABOUT -->
+
+<section class="about" id="about">
+
+<h2>About Our Clinic</h2>
+
+<img src="https://i.ibb.co/d0dVNrJ0/photo-set1-02.jpg">
+
+<p>
+We provide modern dental treatment using advanced equipment
+and experienced doctors. Our goal is to give every patient
+a healthy and confident smile.
+</p>
+
+</section>
+
+<!-- SERVICES -->
+
+<section class="services" id="services">
+
+<h2>Our Services</h2>
+
+<div class="service-box">
+
+<div class="card">
+<h3>Teeth Cleaning</h3>
+<p>Professional dental cleaning for healthy teeth.</p>
+</div>
+
+<div class="card">
+<h3>Root Canal</h3>
+<p>Painless root canal treatments.</p>
+</div>
+
+<div class="card">
+<h3>Dental Implants</h3>
+<p>Permanent solution for missing teeth.</p>
+</div>
+
+<div class="card">
+<h3>Braces</h3>
+<p>Perfect alignment for your smile.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- GALLERY -->
+
+<section class="gallery" id="gallery">
+
+<h2 style="text-align:center">Clinic Gallery</h2>
+
+<div class="gallery-grid">
+
+<img src="https://i.ibb.co/d0rFkwR8/photo-set1-03.jpg">
+<img src="https://i.ibb.co/cctpkpyq/photo-set1-04.jpg">
+<img src="https://i.ibb.co/prxnMbtk/photo-set1-06.jpg">
+<img src="https://i.ibb.co/q3Vxwgnx/photo-set1-05.jpg">
+
+<img src="https://i.ibb.co/twTkwyqF/photo-set2-01.jpg">
+<img src="https://i.ibb.co/wF2Q4f2b/photo-set2-02.jpg">
+<img src="https://i.ibb.co/vvDMJBW8/photo-set2-03.jpg">
+<img src="https://i.ibb.co/BXjxzhH/photo-set2-04.jpg">
+
+<img src="https://i.ibb.co/xK3tCWQz/photo-set2-05.jpg">
+<img src="https://i.ibb.co/35WPpjwf/photo-set2-06.jpg">
+<img src="https://i.ibb.co/3Y0zndbf/photo-set2-07.jpg">
+
+<img src="https://i.ibb.co/XxC9DwsT/photo-set3-01.jpg">
+<img src="https://i.ibb.co/k7MKL8N/photo-set3-02.jpg">
+<img src="https://i.ibb.co/nqtPTHBW/photo-set3-03.jpg">
+<img src="https://i.ibb.co/bM3jZTny/photo-set3-04.jpg">
+<img src="https://i.ibb.co/bR6ywvyT/photo-set3-05.jpg">
+<img src="https://i.ibb.co/MkyqLJ7w/photo-set3-06.jpg">
+
+<img src="https://i.ibb.co/wTZ0kLZ/photo-set4-01.jpg">
+<img src="https://i.ibb.co/HL9wXfB3/photo-set4-02.jpg">
+<img src="https://i.ibb.co/n808sZKQ/photo-set4-03.jpg">
+<img src="https://i.ibb.co/HDXDBT17/photo-set4-04.jpg">
+<img src="https://i.ibb.co/1fTYLBgH/photo-set4-05.jpg">
+<img src="https://i.ibb.co/FLxq66S4/photo-set4-06.jpg">
+
+<img src="https://i.ibb.co/VW9q9V64/photo-set5-01.jpg">
+<img src="https://i.ibb.co/hxyD3bvZ/photo-set5-02.jpg">
+<img src="https://i.ibb.co/xq5DmGFg/photo-set5-03.jpg">
+<img src="https://i.ibb.co/DmcKDgQ/photo-set5-04.jpg">
+
+<img src="https://i.ibb.co/5hdpsZnZ/photo-set6-01.jpg">
+<img src="https://i.ibb.co/nNZ6Zzgn/photo-set7-01.jpg">
+
+</div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section class="contact" id="contact">
+
+<h2>Contact Us</h2>
+
+<p>📍 Khurana Dental Clinic</p>
+<p>📞 Phone: +91 XXXXX XXXXX</p>
+<p>🕒 Mon - Sat : 10AM - 7PM</p>
+
+</section>
+
+<footer>
+
+© 2026 Khurana Dental Clinic
+
+</footer>
+
+</body>
+</html>width:100%;
+border-radius:10px;
+}
+
+/* CONTACT */
+
+.contact{
+padding:40px;
+text-align:center;
+}
+
+footer{
+background:#0a7cff;
+color:white;
+text-align:center;
+padding:15px;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav>
+<div><b>Khurana Dental</b></div>
+<div>
+<a href="#">Home</a>
+<a href="#about">About</a>
+<a href="#services">Services</a>
+<a href="#gallery">Gallery</a>
+<a href="#contact">Contact</a>
+</div>
+</nav>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<img src="https://i.ibb.co/8n86199z/photo-set1-01.jpg">
+
+<div class="hero-text">
+<h1>Khurana Dental Clinic</h1>
+<p>Healthy Smiles • Trusted Care</p>
+</div>
+
+</section>
+
+<!-- ABOUT -->
+
+<section class="about" id="about">
+
+<h2>About Our Clinic</h2>
+
+<img src="https://i.ibb.co/d0dVNrJ0/photo-set1-02.jpg">
+
+<p>
+We provide modern dental treatment using advanced equipment
+and experienced doctors. Our goal is to give every patient
+a healthy and confident smile.
+</p>
+
+</section>
+
+<!-- SERVICES -->
+
+<section class="services" id="services">
+
+<h2>Our Services</h2>
+
+<div class="service-box">
+
+<div class="card">
+<h3>Teeth Cleaning</h3>
+<p>Professional dental cleaning for healthy teeth.</p>
+</div>
+
+<div class="card">
+<h3>Root Canal</h3>
+<p>Painless root canal treatments.</p>
+</div>
+
+<div class="card">
+<h3>Dental Implants</h3>
+<p>Permanent solution for missing teeth.</p>
+</div>
+
+<div class="card">
+<h3>Braces</h3>
+<p>Perfect alignment for your smile.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- GALLERY -->
+
+<section class="gallery" id="gallery">
+
+<h2 style="text-align:center">Clinic Gallery</h2>
+
+<div class="gallery-grid">
+
+<img src="https://i.ibb.co/d0rFkwR8/photo-set1-03.jpg">
+<img src="https://i.ibb.co/cctpkpyq/photo-set1-04.jpg">
+<img src="https://i.ibb.co/prxnMbtk/photo-set1-06.jpg">
+<img src="https://i.ibb.co/q3Vxwgnx/photo-set1-05.jpg">
+
+<img src="https://i.ibb.co/twTkwyqF/photo-set2-01.jpg">
+<img src="https://i.ibb.co/wF2Q4f2b/photo-set2-02.jpg">
+<img src="https://i.ibb.co/vvDMJBW8/photo-set2-03.jpg">
+<img src="https://i.ibb.co/BXjxzhH/photo-set2-04.jpg">
+
+<img src="https://i.ibb.co/xK3tCWQz/photo-set2-05.jpg">
+<img src="https://i.ibb.co/35WPpjwf/photo-set2-06.jpg">
+<img src="https://i.ibb.co/3Y0zndbf/photo-set2-07.jpg">
+
+<img src="https://i.ibb.co/XxC9DwsT/photo-set3-01.jpg">
+<img src="https://i.ibb.co/k7MKL8N/photo-set3-02.jpg">
+<img src="https://i.ibb.co/nqtPTHBW/photo-set3-03.jpg">
+<img src="https://i.ibb.co/bM3jZTny/photo-set3-04.jpg">
+<img src="https://i.ibb.co/bR6ywvyT/photo-set3-05.jpg">
+<img src="https://i.ibb.co/MkyqLJ7w/photo-set3-06.jpg">
+
+<img src="https://i.ibb.co/wTZ0kLZ/photo-set4-01.jpg">
+<img src="https://i.ibb.co/HL9wXfB3/photo-set4-02.jpg">
+<img src="https://i.ibb.co/n808sZKQ/photo-set4-03.jpg">
+<img src="https://i.ibb.co/HDXDBT17/photo-set4-04.jpg">
+<img src="https://i.ibb.co/1fTYLBgH/photo-set4-05.jpg">
+<img src="https://i.ibb.co/FLxq66S4/photo-set4-06.jpg">
+
+<img src="https://i.ibb.co/VW9q9V64/photo-set5-01.jpg">
+<img src="https://i.ibb.co/hxyD3bvZ/photo-set5-02.jpg">
+<img src="https://i.ibb.co/xq5DmGFg/photo-set5-03.jpg">
+<img src="https://i.ibb.co/DmcKDgQ/photo-set5-04.jpg">
+
+<img src="https://i.ibb.co/5hdpsZnZ/photo-set6-01.jpg">
+<img src="https://i.ibb.co/nNZ6Zzgn/photo-set7-01.jpg">
+
+</div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section class="contact" id="contact">
+
+<h2>Contact Us</h2>
+
+<p>📍 Khurana Dental Clinic</p>
+<p>📞 Phone: +91 XXXXX XXXXX</p>
+<p>🕒 Mon - Sat : 10AM - 7PM</p>
+
+</section>
+
+<footer>
+
+© 2026 Khurana Dental Clinic
+
+</footer>
+
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Khurana Dental Clinic</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Arial, sans-serif;
+background:#f5f7fa;
+}
+
+/* NAVBAR */
+
+nav{
+background:#0a7cff;
+color:white;
+padding:15px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin:0 10px;
+font-weight:bold;
+}
+
+/* HERO */
+
+.hero{
+position:relative;
+text-align:center;
+color:white;
+}
+
+.hero img{
+width:100%;
+height:400px;
+object-fit:cover;
+}
+
+.hero-text{
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+background:rgba(0,0,0,0.4);
+padding:20px;
+border-radius:10px;
+}
+
+/* ABOUT */
+
+.about{
+padding:40px;
+text-align:center;
+background:white;
+}
+
+.about img{
+width:300px;
+border-radius:10px;
+margin-top:15px;
+}
+
+/* SERVICES */
+
+.services{
+padding:40px;
+text-align:center;
+}
+
+.service-box{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+margin-top:20px;
+}
+
+.card{
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* GALLERY */
+
+.gallery{
+padding:40px;
+background:white;
+}
+
+.gallery-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:15px;
+}
+
+.gallery-grid img{
+width:100%;
+border-radius:10px;
+}
+
+/* CONTACT */
+
+.contact{
+padding:40px;
+text-align:center;
+}
+
+footer{
+background:#0a7cff;
+color:white;
+text-align:center;
+padding:15px;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav>
+<div><b>Khurana Dental</b></div>
+<div>
+<a href="#">Home</a>
+<a href="#about">About</a>
+<a href="#services">Services</a>
+<a href="#gallery">Gallery</a>
+<a href="#contact">Contact</a>
+</div>
+</nav>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<img src="https://i.ibb.co/8n86199z/photo-set1-01.jpg">
+
+<div class="hero-text">
+<h1>Khurana Dental Clinic</h1>
+<p>Healthy Smiles • Trusted Care</p>
+</div>
+
+</section>
+
+<!-- ABOUT -->
+
+<section class="about" id="about">
+
+<h2>About Our Clinic</h2>
+
+<img src="https://i.ibb.co/d0dVNrJ0/photo-set1-02.jpg">
+
+<p>
+We provide modern dental treatment using advanced equipment
+and experienced doctors. Our goal is to give every patient
+a healthy and confident smile.
+</p>
+
+</section>
+
+<!-- SERVICES -->
+
+<section class="services" id="services">
+
+<h2>Our Services</h2>
+
+<div class="service-box">
+
+<div class="card">
+<h3>Teeth Cleaning</h3>
+<p>Professional dental cleaning for healthy teeth.</p>
+</div>
+
+<div class="card">
+<h3>Root Canal</h3>
+<p>Painless root canal treatments.</p>
+</div>
+
+<div class="card">
+<h3>Dental Implants</h3>
+<p>Permanent solution for missing teeth.</p>
+</div>
+
+<div class="card">
+<h3>Braces</h3>
+<p>Perfect alignment for your smile.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- GALLERY -->
+
+<section class="gallery" id="gallery">
+
+<h2 style="text-align:center">Clinic Gallery</h2>
+
+<div class="gallery-grid">
+
+<img src="https://i.ibb.co/d0rFkwR8/photo-set1-03.jpg">
+<img src="https://i.ibb.co/cctpkpyq/photo-set1-04.jpg">
+<img src="https://i.ibb.co/prxnMbtk/photo-set1-06.jpg">
+<img src="https://i.ibb.co/q3Vxwgnx/photo-set1-05.jpg">
+
+<img src="https://i.ibb.co/twTkwyqF/photo-set2-01.jpg">
+<img src="https://i.ibb.co/wF2Q4f2b/photo-set2-02.jpg">
+<img src="https://i.ibb.co/vvDMJBW8/photo-set2-03.jpg">
+<img src="https://i.ibb.co/BXjxzhH/photo-set2-04.jpg">
+
+<img src="https://i.ibb.co/xK3tCWQz/photo-set2-05.jpg">
+<img src="https://i.ibb.co/35WPpjwf/photo-set2-06.jpg">
+<img src="https://i.ibb.co/3Y0zndbf/photo-set2-07.jpg">
+
+<img src="https://i.ibb.co/XxC9DwsT/photo-set3-01.jpg">
+<img src="https://i.ibb.co/k7MKL8N/photo-set3-02.jpg">
+<img src="https://i.ibb.co/nqtPTHBW/photo-set3-03.jpg">
+<img src="https://i.ibb.co/bM3jZTny/photo-set3-04.jpg">
+<img src="https://i.ibb.co/bR6ywvyT/photo-set3-05.jpg">
+<img src="https://i.ibb.co/MkyqLJ7w/photo-set3-06.jpg">
+
+<img src="https://i.ibb.co/wTZ0kLZ/photo-set4-01.jpg">
+<img src="https://i.ibb.co/HL9wXfB3/photo-set4-02.jpg">
+<img src="https://i.ibb.co/n808sZKQ/photo-set4-03.jpg">
+<img src="https://i.ibb.co/HDXDBT17/photo-set4-04.jpg">
+<img src="https://i.ibb.co/1fTYLBgH/photo-set4-05.jpg">
+<img src="https://i.ibb.co/FLxq66S4/photo-set4-06.jpg">
+
+<img src="https://i.ibb.co/VW9q9V64/photo-set5-01.jpg">
+<img src="https://i.ibb.co/hxyD3bvZ/photo-set5-02.jpg">
+<img src="https://i.ibb.co/xq5DmGFg/photo-set5-03.jpg">
+<img src="https://i.ibb.co/DmcKDgQ/photo-set5-04.jpg">
+
+<img src="https://i.ibb.co/5hdpsZnZ/photo-set6-01.jpg">
+<img src="https://i.ibb.co/nNZ6Zzgn/photo-set7-01.jpg">
+
+</div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section class="contact" id="contact">
+
+<h2>Contact Us</h2>
+
+<p>📍 Khurana Dental Clinic</p>
+<p>📞 Phone: +91 XXXXX XXXXX</p>
+<p>🕒 Mon - Sat : 10AM - 7PM</p>
+
+</section>
+
+<footer>
+
+© 2026 Khurana Dental Clinic
+
+</footer>
+
+</body>
+</html>  display:flex;align-items:center;padding:140px 0 90px;position:relative;overflow:hidden
 }
 .hero-blob1{position:absolute;width:640px;height:640px;border-radius:50%;background:rgba(255,255,255,.03);top:-180px;right:-120px;pointer-events:none}
 .hero-blob2{position:absolute;width:420px;height:420px;border-radius:50%;background:rgba(5,184,176,.07);bottom:-110px;left:-80px;pointer-events:none}
